@@ -23,7 +23,7 @@ const config: NuxtConfig = {
   /*
    ** Global CSS
    */
-  css: [],
+  css: ["~/assets/css/main.scss"],
 
   /*
    ** Plugins to load before mounting the App
@@ -34,7 +34,12 @@ const config: NuxtConfig = {
    */
   modules: ["@nuxtjs/axios"],
 
-  buildModules: ["@nuxt/typescript-build", "nuxt-typed-vuex"],
+  buildModules: [
+    "@nuxt/typescript-build",
+    "nuxt-typed-vuex",
+    "@nuxt/image",
+    "@nuxtjs/vuetify",
+  ],
   // /*
   //  ** Build configuration
   //  */
@@ -44,7 +49,6 @@ const config: NuxtConfig = {
      */
     transpile: [/typed-vuex/],
     extend(config, ctx) {},
-    extractCSS: true,
   },
   loading: {
     color: "blue",

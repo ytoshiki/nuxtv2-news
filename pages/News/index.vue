@@ -29,13 +29,15 @@ export default defineComponent({
     },
   },
   async asyncData({ app, store, route }) {
-    const apiKey = app.$config.NEWSDATA_API_KEY;
-    const res = await app.$axios.get(
-      `https://newsdata.io/api/1/news?apikey=${apiKey}&q=${route.query.input}&language=en`
-    );
-    const data = res.data;
+    try {
+      const apiKey = app.$config.NEWSDATA_API_KEY;
+      const res = await app.$axios.get(
+        `https://newsdata.io/api/1/news?apikey=${apiKey}&q=${route.query.input}&language=en`
+      );
+      const data = res.data;
 
-    store.dispatch("searchNewsByKeyword", data);
+      store.dispatch("searchNewsByKeyword", data);
+    } catch (error) {}
   },
   watch: {},
   mounted() {},
