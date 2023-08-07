@@ -1,6 +1,6 @@
 <template>
   <li class="c-news-item">
-    <nuxt-link to="/news/latest/id">
+    <nuxt-link :to="displayLink">
       <div class="image-wrapper">
         <nuxt-img v-if="image_url" :src="image_url" class="inline-block" />
         <nuxt-img
@@ -52,6 +52,9 @@ export default defineComponent({
       }
 
       return "";
+    },
+    displayLink() {
+      return `/news/latest/${this.id}`;
     },
   },
   watch: {},
