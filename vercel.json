@@ -4,7 +4,7 @@
       "src": "nuxt.config.ts",
       "use": "@nuxtjs/vercel-builder",
       "config": {
-        "serverFiles": ["api/**"]
+        "serverFiles": ["server/**"]
       },
       "env": {
         "NEWSDATA_API_KEY": "pub_26330d71da7ae6b4d4fb63bec48c0726a82bb"
