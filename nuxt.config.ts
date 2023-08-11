@@ -48,7 +48,6 @@ const config: NuxtConfig = {
      ** You can extend webpack config here
      */
     transpile: [/typed-vuex/],
-    extend(config, ctx) {},
   },
   loading: {
     color: "blue",
