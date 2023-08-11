@@ -34,12 +34,7 @@ const config: NuxtConfig = {
    */
   modules: ["@nuxtjs/axios"],
 
-  buildModules: [
-    "@nuxt/typescript-build",
-    "nuxt-typed-vuex",
-    "@nuxt/image",
-    "@nuxtjs/vuetify",
-  ],
+  buildModules: ["@nuxt/typescript-build", "nuxt-typed-vuex", "@nuxt/image"],
   // /*
   //  ** Build configuration
   //  */
