@@ -6,14 +6,14 @@
     </div>
     <p>{{ content }}</p>
   </div> -->
-  <div class="c-news-detail">
+  <!-- <div class="c-news-detail">
     <h1>{{ news.title }}</h1>
     <div class="image-wrapper">
       <img v-if="news.image_url" :src="news.image_url" class="inline-block" />
       <img v-if="!news.image_url" src="/img-default.jpg" class="inline-block" />
     </div>
-    <p>{{ news.content }}</p>
-  </div>
+    <p>{{ news.content }}</p> -->
+  <div></div>
 </template>
 
 <script lang="ts">
