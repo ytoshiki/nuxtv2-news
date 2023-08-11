@@ -17,9 +17,9 @@
       "@/*": ["./*"]
     },
     "types": [
+      "@types/node",
       "@nuxt/types",
       "@nuxt/typescript-build",
-      "@types/node",
       "@nuxtjs/axios"
     ]
   },
