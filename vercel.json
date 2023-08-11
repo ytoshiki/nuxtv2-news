@@ -4,9 +4,5 @@
       "src": "nuxt.config.ts",
       "use": "@nuxtjs/vercel-builder"
     }
-  ],
-  "routes": [
-    { "src": "/_nuxt/.*", "dest": "/_nuxt/index.html" },
-    { "src": "/(.*)", "dest": "/" }
   ]
 }
