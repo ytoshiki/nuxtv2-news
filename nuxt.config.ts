@@ -55,7 +55,6 @@ const config: NuxtConfig = {
     typeCheck: true,
     ignoreNotFoundWarnings: true,
   },
-  serverMiddleware: ["~/server"],
 };
 
 export default config;
