@@ -61,12 +61,7 @@ const config: NuxtConfig = {
     typeCheck: true,
     ignoreNotFoundWarnings: true,
   },
-  serverMiddleware: [
-    {
-      path: "/api",
-      handler: "~/api/index.ts",
-    },
-  ],
+  serverMiddleware: ["~/server"],
 };
 
 export default config;
