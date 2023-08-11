@@ -57,6 +57,16 @@ const config: NuxtConfig = {
   publicRuntimeConfig: {
     NEWSDATA_API_KEY: process.env.NEWSDATA_API_KEY,
   },
+  typescript: {
+    typeCheck: true,
+    ignoreNotFoundWarnings: true,
+  },
+  serverMiddleware: [
+    {
+      path: "/api",
+      handler: "~/api/index.ts",
+    },
+  ],
 };
 
 export default config;

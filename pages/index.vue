@@ -18,6 +18,9 @@ export default Vue.extend({
     SearchNewsList,
     LatestNewsList,
   },
-  mounted() {},
+  async asyncData({ $axios }) {
+    const data: any = await $axios.$get("api");
+    console.log(data);
+  },
 });
 </script>
